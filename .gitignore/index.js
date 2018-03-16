@@ -20,5 +20,12 @@ bot.on('message', message => {
 		message.channel.sendMessage("```\n Listes d'insultes courantes : \n - Manant \n - Gredin \n - Sang-bleu```")
 
 	if (message.content === prefix + "flagellation")
-		message.channel.sendMessage("Vous avez pêcher, vous allez être punis ! \n https://cdn.discordapp.com/attachments/331837845851340800/424242014163304449/telechargement.jpg")
+		aleatoire=Math.floor(Math.random()*5)
+			switch(aleatoire){
+			case 0:document.write("D");break;
+			case 1:document.write("A");break;
+			case 2:document.write("B");break;
+			case 3:document.write("C");break;
+			case 4:document.write("E");break;
+}
 })
