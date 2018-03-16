@@ -26,4 +26,5 @@ bot.on('message', message => {
 			case 3:document.write("C");break;
 			case 4:document.write("E");break;
 			}
+	}
 }
