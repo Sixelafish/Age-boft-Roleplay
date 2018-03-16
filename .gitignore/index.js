@@ -11,17 +11,19 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-	if (message.content === prefix + "help"){
+	if (message.content === prefix + "help") {
 		message.channel.sendMessage("```\n Liste des commandes: \n *help - Affiche les commandes d'aides, idiot. \n *insulte - Répertoire d'insultes moyenâgeuses. \n *flagellation - Permet de se néttoyer de tout ses pêchers.```")
-
-	}
 
 	if (message.content === prefix + "insulte")
 		message.channel.sendMessage("```\n Listes d'insultes courantes : \n - Manant \n - Gredin \n - Sang-bleu```")
 
 	if (message.content === prefix + "flagellation")
-		function aleatoire(min, max) { 
-		return (Math.floor((max-min)*Math.random())+min); 
-		} 
-			
-})
+		const aleatoire = Math.floor(Math.random()*5)
+			switch(aleatoire){
+			case 0:document.write("D");break;
+			case 1:document.write("A");break;
+			case 2:document.write("B");break;
+			case 3:document.write("C");break;
+			case 4:document.write("E");break;
+			}
+}
