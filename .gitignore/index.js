@@ -16,15 +16,5 @@ bot.on('message', message => {
 
 	if (message.content === prefix + "insulte")
 		message.channel.sendMessage("```\n Listes d'insultes courantes : \n - Manant \n - Gredin \n - Sang-bleu```")
-
-	if (message.content === prefix + "flagellation")
-		const aleatoire = Math.floor(Math.random()*5)
-			switch(aleatoire){
-			case 0:message.channel.sendMessage("D")
-			case 1:message.channel.sendMessage("A")
-			case 2:message.channel.sendMessage("B")
-			case 3:message.channel.sendMessage("C")
-			case 4:message.channel.sendMessage("E")
-			}
 			
 }
