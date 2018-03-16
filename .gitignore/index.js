@@ -20,10 +20,10 @@ bot.on('message', message => {
 	if (message.content === prefix + "flagellation")
 		const aleatoire = Math.floor(Math.random()*5)
 			switch(aleatoire){
-			case 0:document.write("D");break;
-			case 1:document.write("A");break;
-			case 2:document.write("B");break;
-			case 3:document.write("C");break;
-			case 4:document.write("E");break;
+			case 0:message.channel.sendMessage("D");break;
+			case 1:message.channel.sendMessage("A");break;
+			case 2:message.channel.sendMessage("B");break;
+			case 3:message.channel.sendMessage("C");break;
+			case 4:message.channel.sendMessage("E");break;
 			}
 }
