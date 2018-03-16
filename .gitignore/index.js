@@ -20,6 +20,8 @@ bot.on('message', message => {
 		message.channel.sendMessage("```\n Listes d'insultes courantes : \n - Manant \n - Gredin \n - Sang-bleu```")
 
 	if (message.content === prefix + "flagellation")
-		var aleatoire = Math.random()*5
+		function aleatoire(min, max) { 
+		return (Math.floor((max-min)*Math.random())+min); 
+		} 
 			
 })
