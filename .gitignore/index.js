@@ -20,7 +20,7 @@ bot.on('message', message => {
 	}
 
 	if (message.content === prefix + "flagellation"){
-		const aleatoire = Math.floor(Math.random()*5);
+		const aleatoire = Math.floor(Math.random()*3);
 			switch(aleatoire){
 			case 0:message.channel.sendMessage("1")
 			case 1:message.channel.sendMessage("2")
