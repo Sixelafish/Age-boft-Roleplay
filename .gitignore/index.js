@@ -4,8 +4,8 @@ const bot = new Discord.Client();
 var prefix =  ("*")
 
 bot.on('ready', function() {
-	bot.user.setGame("Command: *help");
-	console.log("Connectedç");
+	bot.user.setGame("Commande aide : *help");
+	console.log("Connected");
 });
 
 bot.login(process.env.TOKEN);
@@ -22,11 +22,10 @@ bot.on('message', message => {
 	if (message.content === prefix + "flagellation"){
 		const aleatoire = Math.floor(Math.random()*5);
 			switch(aleatoire){
-			case 0:message.channel.sendMessage("D")
-			case 1:message.channel.sendMessage("A")
-			case 2:message.channel.sendMessage("B")
-			case 3:message.channel.sendMessage("C")
-			case 4:message.channel.sendMessage("E")
+			case 0:message.channel.sendMessage("1")
+			case 1:message.channel.sendMessage("2")
+			case 2:message.channel.sendMessage("3")
+			case 3:message.channel.sendMessage("4")
 			}
 	}
 			
