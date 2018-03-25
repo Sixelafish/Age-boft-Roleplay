@@ -20,12 +20,7 @@ bot.on('message', message => {
 	}
 
 	if (message.content === prefix + "flagellation"){
-		const aleatoire = Math.floor(Math.random()*3);
-			switch(aleatoire){
-			case 0:message.channel.sendMessage("1")
-			case 1:message.channel.sendMessage("2")
-			case 2:message.channel.sendMessage("3")
-			case 3:message.channel.sendMessage("4")
+		message.channel.send({ files: [{ attachment: "https://cdn.discordapp.com/attachments/331837845851340800/424242014163304449/telechargement.jpg", name: 'telechargement' }] })
 			}
 	}
 			
