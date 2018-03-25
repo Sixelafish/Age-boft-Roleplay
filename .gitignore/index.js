@@ -21,7 +21,7 @@ bot.on('message', message => {
 
 	if (message.content === prefix + "flagellation"){
 		var coups = Math.floor(Math.random() * 451);
-		message.channel.send([message.author.id] + " tu à pêcher ! Prend ces " + coups + " coups de fouet")
+		message.channel.send("@" + [message.author] + " tu à pêcher ! Prend ces " + coups + " coups de fouet")
 		message.channel.send({ files: [{ attachment: "https://cdn.discordapp.com/attachments/331837845851340800/424242014163304449/telechargement.jpg", name: 'telechargement.jpg' }] })
 			}
 	}
