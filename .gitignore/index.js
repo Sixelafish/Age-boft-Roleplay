@@ -19,9 +19,9 @@ bot.on('message', message => {
 		message.channel.sendMessage("```\n Listes d'insultes courantes : \n - Manant \n - Gredin \n - Sang-bleu```");
 	}
 
-	if (message.content === prefix + "flagellation"){
+	if (message.content === prefix + "flagellation" + [message.user]){
 		var coups = Math.floor(Math.random() * 451);
-		message.channel.send("@" + [message.author] + " tu à pêcher ! Prend ces " + coups + " coups de fouet")
+		message.channel.send([message.user] + " tu à pêcher ! Prend ces " + coups + " coups de fouet")
 		message.channel.send({ files: [{ attachment: "https://cdn.discordapp.com/attachments/331837845851340800/424242014163304449/telechargement.jpg", name: 'telechargement.jpg' }] })
 			}
 	}
