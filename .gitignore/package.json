@@ -1,14 +1,18 @@
 {
-  "name": "ageofroleplay",
-  "version": "1.0.0",
-  "description": "My own Discord bot",
+  
+  "name": "Example",
+  "description": "Example",
+  "version": "0.0.0",
+
   "main": "bot.js",
-  "author": "Sixel",
-  "dependencies": {
-    "discord.js": "^11.3.2"
-  },
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js"
   },
-  "license": "ISC"
+  
+  "dependencies": 
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
+
 }
